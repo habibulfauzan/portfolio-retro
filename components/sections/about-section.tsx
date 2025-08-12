@@ -28,41 +28,41 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-4 sm:py-8 lg:py-12 bg-primary rounded-t-lg sm:rounded-t-xl lg:rounded-t-2xl overflow-hidden">
-      <div className="w-full max-w-none sm:max-w-6xl mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+    <section className="py-12 sm:py-16 lg:py-19 mx-2 sm:mx-3 bg-primary rounded-t-2xl sm:rounded-t-3xl lg:rounded-t-4xl">
+      <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-45">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-4 sm:mb-6 lg:mb-8"
+          className="text-center mb-8 sm:mb-12 lg:mb-16"
         >
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-head font-black text-foreground mb-1 sm:mb-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-head font-black text-foreground mb-2 sm:mb-4">
             Tentang Saya
           </h2>
-          <p className="text-muted-foreground text-xs sm:text-sm">
+          <p className="text-muted-foreground text-sm sm:text-base lg:text-lg">
             Sedikit Tentang Saya
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center w-full max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center mb-6 lg:mb-0"
+            className="flex justify-center lg:justify-center"
           >
             <div className="relative">
-              <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 lg:w-52 lg:h-52 bg-foreground rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-border shadow-lg">
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-head font-black text-primary">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-75 lg:h-75 bg-foreground rounded-2xl sm:rounded-3xl flex items-center justify-center border-2 sm:border-4 border-border shadow-lg">
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-head font-black text-primary">
                   HF
                 </div>
               </div>
 
               <motion.div
-                className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-4 h-4 sm:w-6 sm:h-6 bg-foreground shadow-lg shadow-white rotate-45"
+                className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-8 h-8 sm:w-12 sm:h-12 bg-foreground shadow-lg shadow-white rotate-45"
                 animate={{
                   rotate: [45, 55, 45],
                   scale: [1, 1.1, 1],
@@ -74,7 +74,7 @@ export default function AboutSection() {
                 }}
               />
               <motion.div
-                className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 w-3 h-3 sm:w-5 sm:h-5 bg-accent shadow-foreground rounded-full"
+                className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-6 h-6 sm:w-8 sm:h-8 bg-accent shadow-foreground rounded-full"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.7, 1, 0.7],
@@ -94,9 +94,9 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-4 sm:space-y-6"
+            className="space-y-6 sm:space-y-8"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-3">
               {stats.map(({ icon: Icon, title, value, delay }) => (
                 <motion.div
                   key={title}
@@ -108,11 +108,11 @@ export default function AboutSection() {
                   <Card
                     variant="outline"
                     size="sm"
-                    className="text-center p-3 sm:p-4 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white min-h-[90px] sm:min-h-[100px]"
+                    className="text-center p-2 sm:p-3 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white"
                   >
-                    <div className="space-y-2 flex flex-col justify-center h-full">
+                    <div className="space-y-1 sm:space-y-1.5">
                       <Icon className="w-5 h-5 sm:w-6 sm:h-6 mx-auto text-primary" />
-                      <h3 className="font-head font-bold text-xs sm:text-sm text-primary leading-tight">
+                      <h3 className="font-head font-bold text-xs sm:text-xs text-primary">
                         {title}
                       </h3>
                       <p className="text-xs text-muted-foreground leading-tight">
@@ -129,7 +129,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
-              className="space-y-4 sm:space-y-5"
+              className="space-y-4"
             >
               <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                 Mahasiswa aktif di Universitas Islam Negeri Sultan Syarif Kasim
@@ -152,7 +152,7 @@ export default function AboutSection() {
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="gap-2 bg-secondary text-secondary-foreground hover:bg-white hover:text-primary-foreground transition-all duration-300 text-sm sm:text-base px-6 py-3 w-full sm:w-auto"
+                  className="gap-2 sm:gap-3 bg-secondary text-secondary-foreground hover:bg-white hover:text-primary-foreground transition-all duration-300 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3"
                   onClick={() => {
                     window.open("/CV.pdf", "_blank");
                   }}
