@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Badge } from "@/components/retroui/Badge";
-import { Mail, Github, Linkedin, MapPin, Clock } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -121,10 +121,6 @@ export default function HeroSection() {
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">Pekanbaru, Indonesia</span>
               </div>
-              {/* <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm">Now, 10:07 PM local time</span>
-              </div> */}
             </div>
           </motion.div>
         </motion.div>
