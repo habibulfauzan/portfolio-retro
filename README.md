@@ -10,7 +10,7 @@
 
 _A modern, animated portfolio showcasing web development expertise_
 
-[🌐 Live Demo](https://your-portfolio-url.com) • [📧 Contact](mailto:habibulfauzann@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/habibulfauzan/)
+[🌐 Live Demo](https://habibulfauzan.vercel.app/) • [📧 Contact](mailto:habibulfauzann@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/habibulfauzan/)
 
 </div>
 
